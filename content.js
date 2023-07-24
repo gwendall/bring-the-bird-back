@@ -4,19 +4,18 @@ console.log('Mutation Observer started !!!');
 // Function to replace text when element is found
 async function replaceLogo() {
   // Select all elements based on the CSS selector
-  let elements = document.querySelectorAll('header a[aria-label="Twitter"]');
+  let element = document.querySelector('header a[aria-label="Twitter"]');
 
-  // Get the URL of the SVG file
-  let svgURL = chrome.runtime.getURL("bird.svg");
+  if (element) {
+    // Get the URL of the SVG file
+    let svgURL = chrome.runtime.getURL("bird.svg");
 
-  // Fetch the SVG
-  let response = await fetch(svgURL);
-  let data = await response.text();
+    // Fetch the SVG
+    let response = await fetch(svgURL);
+    let data = await response.text();
 
-  // Loop over each element and replace the HTML with the SVG
-  elements.forEach(element => {
     element.innerHTML = data;
-  });
+  }
 }
 
 // Options for the observer (which mutations to observe)

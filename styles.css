@@ -10,8 +10,8 @@ header a[aria-label="Twitter"] > div {
 }
 
 header a[aria-label="Twitter"] svg {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 
 header a[aria-label="Twitter"] svg path {
