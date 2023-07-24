@@ -1,0 +1,19 @@
+/* styles.css */
+header a[aria-label="Twitter"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a[aria-label="Twitter"] > div {
+    display: none;
+}
+
+header a[aria-label="Twitter"] svg {
+    width: 30px;
+    height: 30px;
+}
+
+header a[aria-label="Twitter"] svg path {
+    fill: rgb(29, 155, 240) !important;
+}
