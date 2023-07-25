@@ -1,12 +1,15 @@
-/* styles.css */
+[id^="loading-bird-anim"],
+div[aria-label^="Loading"] svg,
+svg[aria-label="Twitter"],
+header a[aria-label="Twitter"] > div,
+path[d="M14.258 10.152L23.176 0h-2.113l-7.747 8.813L7.133 0H0l9.352 13.328L0 23.973h2.113l8.176-9.309 6.531 9.309h7.133zm-2.895 3.293l-.949-1.328L2.875 1.56h3.246l6.086 8.523.945 1.328 7.91 11.078h-3.246zm0 0"] {
+    display: none !important;
+}
+
 header a[aria-label="Twitter"] {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header a[aria-label="Twitter"] > div {
-    display: none;
 }
 
 header a[aria-label="Twitter"] svg {
@@ -15,5 +18,5 @@ header a[aria-label="Twitter"] svg {
 }
 
 header a[aria-label="Twitter"] svg path {
-    fill: rgb(29, 155, 240) !important;
+    fill: rgb(29, 155, 240);
 }
